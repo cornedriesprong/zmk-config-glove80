@@ -107,23 +107,23 @@
 
         lower_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP     &kp C_PREV   &kp C_NEXT            &kp C_PP                                                                                               &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans        &none            &none        &none                 &none                  &kp HOME                                                                &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans        &kp EXCLAMATION  &kt CARET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR                                                              &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans        &kp PLUS         &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT                                                             &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp EQUAL        &kp HASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE    &trans      &trans  &to DEFAULT    &trans  &trans  &trans  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS         &kp INS      &kp F11               &kp F12                             &kp ESCAPE  &trans  &trans         &trans  &trans  &trans          &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&kp C_BRI_DN  &kp C_BRI_UP     &kp C_PREV   &kp C_NEXT            &kp C_PP                                                                                                          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
+&trans        &none            &none        &none                 &none                  &kp HOME                                                                           &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
+&trans        &kp EXCLAMATION  &kt CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR                                                                         &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
+&kp TILDE     &kp PLUS         &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT                                                                        &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&trans        &kp EQUAL        &kp HASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE    &trans      &trans             &to DEFAULT    &trans  &trans  &trans  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans        &kp CAPS         &kp INS      &kp F11               &kp F12                             &kp ESCAPE  &kp DOUBLE_QUOTES  &trans         &trans  &trans  &trans          &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
 
         magic_layer {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                               &none         &none         &none         &none         &none
-&none        &none            &none            &none            &none            &none                                                               &none          &none         &none         &none         &none         &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE      &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &kp AMPERSAND  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp UNDERSCORE
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none                 &none         &none         &none         &none         &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                                                 &none         &none         &none         &none           &none
+&none        &none            &none            &none            &none            &none                                                                                 &none          &none         &none         &none         &none           &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                                       &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE        &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                                       &kp AMPERSAND  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS       &kp UNDERSCORE
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none         &none             &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &kp NUMBER_0  &kp SINGLE_QUOTE                 &none         &none         &none         &none           &none
             >;
         };
     };
